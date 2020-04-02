@@ -10,7 +10,7 @@ library(MESS)
 
 
 ### WORKING DIR ###
-setwd('P:/projects/HCOF/Data/')
+setwd('YOURPATH')
 
 
 ### IMPORT DATA ###
