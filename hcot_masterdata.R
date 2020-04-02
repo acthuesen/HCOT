@@ -15,35 +15,35 @@ setwd('YOURPATH')
 
 ### IMPORT DATA ###
 # hcot ap = anthropometry
-hcot_ap <- read.table('./ss/HCOT_dag 1_A-C.txt', sep=",", header=TRUE)
+hcot_ap <- read.table('./HCOT_dag 1_A-C.txt', sep=",", header=TRUE)
 
 # hcot_bw = birth weight
-hcot_bw <- read.table('./ss/HCOT_FV.txt', sep=",", header=TRUE)
+hcot_bw <- read.table('./HCOT_FV.txt', sep=",", header=TRUE)
 
 # hcot_tr = training randomization
-hcot_tr <- read.table('./ss/HCOT_randomization.txt', sep="\t", header=TRUE)
+hcot_tr <- read.table('./HCOT_randomization.txt', sep="\t", header=TRUE)
 
 # hcot_bd = bone density dexa data
-hcot_bd <- read.table('./ss/HCOT_DXA BMD_A-C.txt', sep=",", header=TRUE)
+hcot_bd <- read.table('./HCOT_DXA BMD_A-C.txt', sep=",", header=TRUE)
 
 # hcot_vf = visceral fat mass dexa data
-hcot_vf <- read.table('./ss/HCOT_DXA VF_A-C.txt', sep=",", header=TRUE)
+hcot_vf <- read.table('./HCOT_DXA VF_A-C.txt', sep=",", header=TRUE)
 
 # hcot_wb = whole body composition dexa data
-hcot_wb <- read.table('./ss/HCOT_DXA Whole_A-C.txt', sep=",", header=TRUE) 
+hcot_wb <- read.table('./HCOT_DXA Whole_A-C.txt', sep=",", header=TRUE) 
 
 # hcot_lf = liver fat data from MRI
-hcot_lf <- read.table('./ss/HCOT_MRI_A-C_long.txt', sep=",", header=TRUE)
+hcot_lf <- read.table('./HCOT_MRI_A-C_long.txt', sep=",", header=TRUE)
 
 # hcot_vm = vo2max data
-hcot_vm <- read.table('./ss/HCOT_VO2max_A-C.txt', sep=",", header=TRUE)
+hcot_vm <- read.table('./HCOT_VO2max_A-C.txt', sep=",", header=TRUE)
 
 # hcot_bl = biochemistry for baseline
-hcot_bl <- read.table('./ss/HCOT_lab_A-C.txt', sep=",", header=T, check.names = F, na.strings = c("", " ")) 
+hcot_bl <- read.table('./HCOT_lab_A-C.txt', sep=",", header=T, check.names = F, na.strings = c("", " ")) 
 # check.names=F when importing from txt due to +/- in headers
 
 # hcot_mr = VAT from MRI
-hcot_mr <- read.table('./ss/VAT_MRI.txt', sep="\t", header=T)
+hcot_mr <- read.table('./VAT_MRI.txt', sep="\t", header=T)
 
 
 ### WRANGLE DATA ###
