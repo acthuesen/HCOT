@@ -4,9 +4,11 @@ import os
 
 os.chdir(setwd)
 
-wb = op.load_workbook('Charlotte Glucose+Glycerol_210220.xlsx', data_only=True) #data_only flag so formulas are evaluated
+wb = op.load_workbook('Charlotte Glucose+Glycerol_010720.xlsx', data_only=True) #data_only flag so formulas are evaluated
 wb.remove(wb['Inf1'])
 wb.remove(wb['Inf2'])
+wb.remove(wb['correction'])
+wb.remove(wb['Ark3'])
 tracerdat = pd.DataFrame(columns=['ttid', 
                            'endogenous_glucose_ra', 
                            'total_glucose_ra', 
