@@ -21,6 +21,8 @@ for sheet in wb.sheetnames:
     df = pd.DataFrame(ws.values)
     ttid = df.iloc[55:91][1]
     ttid.reset_index(drop=True, inplace=True, name='ttid')
+    total_glucose = df.iloc[55:91][7]
+    total_glucose.reset_index(drop=True, inplace=True, name='total_glucose')
     endogenous_glucose_ra = df.iloc[55:91][10]
     endogenous_glucose_ra.reset_index(drop=True, inplace=True, name='endogenous_glucose_ra')
     total_glucose_ra = df.iloc[55:91][11]
@@ -29,18 +31,22 @@ for sheet in wb.sheetnames:
     oral_glucose_ra.reset_index(drop=True, inplace=True, name='oral_glucose_ra')
     total_glucose_rd = df.iloc[55:91][13]
     total_glucose_rd.reset_index(drop=True, inplace=True, name='total_glucose_rd')
+    total_glycerol = df.iloc[104:140][3]
+    total_glycerol.reset_index(drop=True, inplace=True, name='total_glycerol')
     glycerol_ra = df.iloc[104:140][4]
     glycerol_ra.reset_index(drop=True, inplace=True, name='glycerol_ra')
     glycerol_rd = df.iloc[104:140][5]
     glycerol_rd.reset_index(drop=True, inplace=True, name='glycerol_rd')
     calc_vals = pd.concat([ttid, 
+                           total_glucose,
                            endogenous_glucose_ra, 
                            total_glucose_ra, 
                            oral_glucose_ra, 
-                           total_glucose_rd, 
+                           total_glucose_rd,
+                           total_glycerol,
                            glycerol_ra, 
                            glycerol_rd], 
                           axis=1)
     calc_vals['sheetname'] = sheet
     tracerdat = tracerdat.append(calc_vals, sort=True)
-tracerdat.to_csv(r'tracerdat.csv') 
+tracerdat.to_csv(r'tracerdat.csv', index=False) 
