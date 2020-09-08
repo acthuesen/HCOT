@@ -21,7 +21,7 @@ for sheet in wb.sheetnames:
     df = pd.DataFrame(ws.values)
     ttid = df.iloc[55:91][1]
     ttid.reset_index(drop=True, inplace=True, name='ttid')
-    total_glucose = df.iloc[55:91][7]
+    total_glucose = df.iloc[55:91][8]
     total_glucose.reset_index(drop=True, inplace=True, name='total_glucose')
     endogenous_glucose_ra = df.iloc[55:91][10]
     endogenous_glucose_ra.reset_index(drop=True, inplace=True, name='endogenous_glucose_ra')
