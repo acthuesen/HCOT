@@ -1,4 +1,4 @@
-# REE
+# REE (NB: Created 2018)
 A semi-generalized resting energy expenditure calculation
 
 This is a short script that calculates various parameters of a resting energy expenditure/indirect calorimetry test performed on a cosmed device.
