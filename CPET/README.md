@@ -1,4 +1,5 @@
 # CPET
+## NB: Created 2018
 A semi-generalized maximal oxygen consumption calculation
 
 This is a short script that calculates various parameters of a cardio-pulmonal exercise test/maximal oxygen consumption test (VO2max test) performed on a cosmed device. 
