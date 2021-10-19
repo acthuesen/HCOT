@@ -1,2 +1,2 @@
-# other-stuff
-This is just stuff that might be useful.
+# HCOT
+Collection of scripts used for High Carb Overfeeding and Training Study. 
